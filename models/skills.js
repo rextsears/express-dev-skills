@@ -34,7 +34,7 @@ function deleteOne(id) {
   skills.splice(idx, 1);
 };
       
-  function create(skill) {
+function create(skill) {
     skill.id = Date.now() % 1000000;
     skill.level = "beginner";
     skills.push(skill);

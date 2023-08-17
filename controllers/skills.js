@@ -24,6 +24,6 @@ function create(req, res) {
   res.redirect('/skills');
 };
       
-  function newSkill(req, res) {
+function newSkill(req, res) {
     res.render('skills/new', { title: 'New Skill' });
   };
