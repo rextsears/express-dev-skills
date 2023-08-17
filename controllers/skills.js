@@ -9,7 +9,13 @@ function index(req, res) {
 module.exports = {
     index,
     new: newSkill,
-    create
+    create,
+    delete: deleteSkill
+};
+	
+function deleteSkill(req, res) {
+  Skills.deleteOne(req.params.id);
+  res.redirect('/skills');
 };
 	
 function create(req, res) {
